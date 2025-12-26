@@ -18,14 +18,10 @@ class AppPages {
       page: () => LoginView(),
       binding: LoginBinding(),
     ),
+    GetPage(name: _Paths.HOME, page: () => HomeView(), binding: HomeBinding()),
     GetPage(
-      name: _Paths.HOME,
-      page: () => HomeView(),
-      binding: HomeBinding(),
-    ),
-    GetPage(
-      name: _Paths.SIGNUP,
-      page: () =>  SignupView(),
+      name: '/signup',
+      page: () => SignupView(),
       binding: SignupBinding(),
     ),
   ];

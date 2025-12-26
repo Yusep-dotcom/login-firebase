@@ -1,3 +1,4 @@
+import 'package:app_1/app/modules/home/views/home_view.dart';
 import 'package:app_1/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -28,7 +29,7 @@ class AuthController extends GetxController {
         password: password,
       );
       Get.snackbar('Sukses', 'anda berhasil mendaftar');
-      Get.offAllNamed('/signOut');
+      Get.to(HomeView());
     } catch (e) {
       Get.snackbar(
         "About Login",

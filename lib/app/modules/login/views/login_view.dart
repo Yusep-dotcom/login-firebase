@@ -1,4 +1,5 @@
 import 'package:app_1/app/controllers/auth_controller.dart';
+import 'package:app_1/app/modules/signup/views/signup_view.dart';
 import 'package:app_1/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
@@ -49,7 +50,7 @@ class LoginView extends GetView<LoginController> {
                   Text('Belum Punya Akun'),
                   SizedBox(height: 10),
                   TextButton(
-                    onPressed: () => Get.toNamed(Routes.HOME),
+                    onPressed: () => Get.to(SignupView()),
                     child: Text('Daftar'),
                   ),
                 ],
